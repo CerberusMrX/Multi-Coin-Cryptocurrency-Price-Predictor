@@ -7,7 +7,7 @@
 A tool that predicts if BTC, ETH, LTC, USDT, and BNB prices will rise or fall in 1 day, 2 days, 1 week, or 1 month, using XGBoost on a year of data with 60–75% accuracy. It shows live prices and forecasts on a Flask website with charts.
 
 ## About
-This project predicts price movements for five cryptocurrencies—Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Tether (USDT), and Binance Coin (BNB)—over four time periods. Built for my [Course Name/Code] at the National Institute of Business Management (NIBM), supervised by Mr. Ravilal, it uses machine learning and a web app. Submitted by [Your Full Name] on March 26, 2025.
+This project predicts price movements for five cryptocurrencies—Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Tether (USDT), and Binance Coin (BNB)—over four time periods. Built for my Machine Leraning Module at the National Institute of Business Management (NIBM), supervised by Mr. Ravilal, it uses machine learning and a web app. Submitted by Sudeepa Wanigarathna on March 26, 2025.
 
 ## Features
 - **Data Collection**: Grabs 1 year of daily prices (March 2024–2025) from CoinGecko for BTC, ETH, LTC, USDT, and BNB.
@@ -22,21 +22,27 @@ This project predicts price movements for five cryptocurrencies—Bitcoin (BTC),
 - Git (to clone the repo)
 - A web browser (e.g., Chrome)
 
-## How to Install and Run
 
-**Clone the Repository**
-    
-   Open a terminal and run:  
+## 🚀 Installation and Execution
+
+This project follows a sequential pipeline: Data Collection → Preprocessing → Feature Engineering → Model Training → Web Application. Follow these steps to set up and run the entire system locally.
+
+### 1. Setup & Dependencies
+
+First, clone the repository and set up a dedicated Python environment.
+
+```bash
+# Clone the Repository
+git clone [https://github.com/CerberusMrX/Multi-Coin-Cryptocurrency-Price-Predictor.git](https://github.com/CerberusMrX/Multi-Coin-Cryptocurrency-Price-Predictor.git)
+cd Multi-Coin-Cryptocurrency-Price-Predictor
+
+# Create and activate a Virtual Environment
 python3 -m venv crypto_venv
 source crypto_venv/bin/activate
+
+# Install all required Python packages
 pip install -r requirements.txt
-python data_collection_cg.py
-python preprocess_eda.py
-python feature_engineering.py
-python model_training.py
+   
+# Run the applicaton
 python app.py
-
-   
-
-   
    
